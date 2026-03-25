@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --color-secondary-dim: #00efc4;
+  --color-inverse-surface: #fff7fb;
+  --color-on-background: #fcdbff;
+  --color-surface-container-highest: #3b1645;
+  --color-primary: #ff83d5;
+  --color-on-secondary-container: #defff2;
+  --color-surface-container-high: #33103c;
+  --color-on-secondary: #005d4b;
+  --color-on-error: #490013;
+  --color-on-primary: #5c0048;
+  --color-on-tertiary-container: #f8f1ff;
+  --color-surface: #1c0324;
+  --color-secondary-container: #006b57;
+  --color-outline: #8b6a91;
+  --color-on-surface: #fcdbff;
+  --color-tertiary-container: #7000ff;
+  --color-tertiary: #ac89ff;
+  --color-surface-dim: #1c0324;
+  --color-on-surface-variant: #c49fc9;
+  --color-on-primary-fixed: #000000;
+  --color-primary-container: #ff66d0;
+  --color-on-secondary-fixed-variant: #006854;
+  --color-surface-variant: #3b1645;
+  --color-surface-container-low: #23062b;
+  --color-on-secondary-fixed: #00483a;
+  --color-background: #1c0324;
+  --color-surface-container-lowest: #000000;
+  --color-error-container: #a70138;
+  --color-on-primary-container: #480038;
+  --color-secondary-fixed: #15ffd1;
+  --color-on-tertiary-fixed: #1f0052;
+  --color-primary-fixed: #ff66d0;
+  --color-secondary-fixed-dim: #00efc4;
+  --color-on-tertiary: #290067;
+  --color-error: #ff6e84;
+  --color-secondary: #15ffd1;
+  --color-surface-bright: #431b4e;
+  --color-inverse-primary: #b2008e;
+  --color-surface-container: #2b0b34;
+  --color-outline-variant: #5b3d61;
+  --color-on-error-container: #ffb2b9;
+  --color-inverse-on-surface: #694a6f;
+  --color-tertiary-fixed: #bda1ff;
+  --color-primary-dim: #ff5fd0;
+  --color-error-dim: #d73357;
+  --color-tertiary-dim: #874cff;
+  --color-tertiary-fixed-dim: #b190ff;
+  --color-on-primary-fixed-variant: #580045;
+  --color-on-tertiary-fixed-variant: #4700a7;
+  --color-surface-tint: #ff83d5;
+  --color-primary-fixed-dim: #ff3fcd;
+
+  --font-headline: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Be Vietnam Pro", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap');
+
+body {
+  @apply bg-background text-on-background font-body;
+}
+
+.glass-effect {
+  @apply backdrop-blur-xl bg-surface/60;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-tertiary;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
